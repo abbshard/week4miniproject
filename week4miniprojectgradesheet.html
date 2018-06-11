@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Grade Sheet</title>
+	
+	<script type="text/javascript" src="js/gradesheet.js"></script>	
+	
+</head>
+<body>
+	
+		<form>
+			<table width="100%">
+				<tr>
+					<td>Subject</td>
+					<td>Score</td>
+					<td>Grade</td>
+				</tr>
+
+				<tr>
+					<td>English</td>
+					<td><input type="text" name="score1" id="score" onkeyup="displaygrade(this.value, 'grade');"></td>
+					<td> <input type="text" name="english" id="grade" > </td>
+				</tr>
+
+				<tr>
+					<td>Maths</td>
+					<td><input type="text" name="score2" id="ma" onkeyup="displaygrade(this.value, 'grade1');"></td>
+					<td> <input type="text" name="maths" id="grade1" ></td>
+				</tr>
+
+				<tr>
+					<td>Chemistry</td>
+					<td><input type="text" name="score3" id="chem"onkeyup="displaygrade(this.value, 'grade2');"></td>
+					<td><input type="text" name="chemist" id="grade2"></td>
+				</tr>
+
+				<tr>
+					<td>Biology</td>
+					<td><input type="text" name="score4" id="bio" onkeyup="displaygrade(this.value, 'grade3');"></td>
+					<td><input type="text" name="biology" id="grade3"></td>
+				</tr>
+
+				<tr>
+					<td>French</td>
+					<td><input type="text" name="score5" id="fren" onkeyup="displaygrade(this.value, 'grade4');"></td>
+					<td> <input type="text" name="french" id="grade4"></td>
+				</tr>
+
+				<tr>
+					<td> <input type="button" name="btn1" id="btn1" value="Get Result" onclick="display()"></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>TOTAL
+						
+					</td>
+					<td id="total"></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>Remark</td>
+					<td id="rem"></td>
+					<td id="image"></td>
+				</tr>
+
+				<tr>
+					<td>Average</td>
+					<td id="aver"></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>Password</td>
+					<td><input type="Password" name="Password" id="pswd"></td>
+					<td> <input type="checkbox" name="checkbox"  onclick="myReveal()">Reveal Password
+					</td>
+				</tr>
+			</table>
+		</form>
+
+		
+</body>
+</html>
